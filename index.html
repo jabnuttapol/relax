@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relax</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="img/logo.PNG">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Relax</h1>
+        </nav>
+    </header>
+
+    <div id="about1">
+        <h1 id="section">Sound</h1>  
+        <div id="nature">
+            <p>Bird</p>
+            <img src="img/angry-birds.png" alt="birds">
+            <!-- ปุ่มเล่น/หยุดเสียง -->
+            <button onclick="playSound()" id="playButton">Play Sound</button>
+            <button onclick="stopSound()">Stop Sound</button>
+            <!-- แถบเลื่อนเพิ่ม/ลดเสียง -->
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" oninput="setVolume(this.value)">
+            <!-- เสียงที่ต้องการเล่น -->
+            <audio id="myAudio" loop>
+                <source src="sound/bird/bird-voices-7716.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div id="nature">
+            <p>Fire</p>
+            <img src="img/bonfire.png" alt="fire">
+            <button onclick="playSound2()" id="playButton2">Play Sound</button>
+            <button onclick="stopSound2()">Stop Sound</button>
+            <input type="range" id="volumeSlider2" min="0" max="1" step="0.01" value="1" oninput="setVolume2(this.value)">
+            <audio id="myAudio2" loop>
+                <source src="sound/fire-sound-efftect-21991.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div id="nature">
+            <p>Rain</p>
+            <img src="img/heavy-rain.png" alt="rain">
+            <button onclick="playSound3()" id="playButton3">Play Sound</button>
+            <button onclick="stopSound3()">Stop Sound</button>
+            <input type="range" id="volumeSlider3" min="0" max="1" step="0.01" value="1" oninput="setVolume3(this.value)">
+            <audio id="myAudio3" loop>
+                <source src="sound/rain/rain-noise-for-sleep-21436.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div id="nature">
+            <p>Rain Umbrella</p>
+            <img src="img/umbrella.png" alt="rainUmbrella">
+            <button onclick="playSound4()" id="playButton4">Play Sound</button>
+            <button onclick="stopSound4()">Stop Sound</button>
+            <input type="range" id="volumeSlider3" min="0" max="1" step="0.01" value="1" oninput="setVolume4(this.value)">
+            <audio id="myAudio4" loop>
+                <source src="sound/rain/rain-on-umbrella-weather-loop-112174.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        
+        <div id="nature">
+            <p>Stream</p>
+            <img src="img/jungle.png" alt="jungle">
+            <button onclick="playSound5()" id="playButton5">Play Sound</button>
+            <button onclick="stopSound5()">Stop Sound</button>
+            <input type="range" id="volumeSlider5" min="0" max="1" step="0.01" value="1" oninput="setVolume5(this.value)">
+            <audio id="myAudio5" loop>
+                <source src="sound/stream/small-forest-stream-river-brook-nature-loop-111169.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div id="nature">
+            <p>Waterfall</p>
+            <img src="img/waterfall.png" alt="waterfall">
+            <button onclick="playSound6()" id="playButton6">Play Sound</button>
+            <button onclick="stopSound6()">Stop Sound</button>
+            <input type="range" id="volumeSlider6" min="0" max="1" step="0.01" value="1" oninput="setVolume6(this.value)">
+            <audio id="myAudio6" loop>
+                <source src="sound/stream/the-sound-of-a-stream-a-spring-stream-the-sound-of-water-109237.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div id="nature">
+            <p>Sea</p>
+            <img src="img/wave.png" alt="wave">
+            <button onclick="playSound7()" id="playButton7">Play Sound</button>
+            <button onclick="stopSound7()">Stop Sound</button>
+            <input type="range" id="volumeSlider7" min="0" max="1" step="0.01" value="1" oninput="setVolume7(this.value)">
+            <audio id="myAudio7" loop>
+                <source src="sound/water/water-splashing-108887.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div id="nature">
+            <p>Wind</p>
+            <img src="img/wind.png" alt="wind">
+            <button onclick="playSound8()" id="playButton8">Play Sound</button>
+            <button onclick="stopSound8()">Stop Sound</button>
+            <input type="range" id="volumeSlider8" min="0" max="1" step="0.01" value="1" oninput="setVolume8(this.value)">
+            <audio id="myAudio8" loop>
+                <source src="sound/wind/howling-wind-109590.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div id="nature">
+            <p>Windy</p>
+            <img src="img/wind (1).png" alt="wind1">
+            <button onclick="playSound9()" id="playButton9">Play Sound</button>
+            <button onclick="stopSound9()">Stop Sound</button>
+            <input type="range" id="volumeSlider9" min="0" max="1" step="0.01" value="1" oninput="setVolume9(this.value)">
+            <audio id="myAudio9" loop>
+                <source src="sound/wind/most-stormy-howling-wind-110211.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <hr>
+    
+    <div id="about2">
+        <div id="music">
+            <p>Mood</p>
+            <img src="img/nebula-8721490_1280.jpg" alt="beat1" height="140px" class="beat">
+            <button onclick="playSound10()" id="playButton10">Play Sound</button>
+            <button onclick="stopSound10()">Stop Sound</button>
+            <input type="range" id="volumeSlider9" min="0" max="1" step="0.01" value="1" oninput="setVolume10(this.value)">
+            <audio id="myAudio10" loop>
+                <source src="music/nightfall-future-bass-music-228100.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div id="music">
+            <p>Mood</p>
+            <img src="img/space-art-5626853_1280.jpg" alt="beat2" height="140px" class="beat">
+            <button onclick="playSound11()" id="playButton11">Play Sound</button>
+            <button onclick="stopSound11()">Stop Sound</button>
+            <input type="range" id="volumeSlider11" min="0" max="1" step="0.01" value="1" oninput="setVolume11(this.value)">
+            <audio id="myAudio11" loop>
+                <source src="music/lazy-day-stylish-futuristic-chill-239287.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div id="music">
+            <p>Mood</p>
+            <img src="img/ai-generated-8699191_640.jpg" alt="beat3" height="140px" class="beat">
+            <button onclick="playSound12()" id="playButton12">Play Sound</button>
+            <button onclick="stopSound12()">Stop Sound</button>
+            <input type="range" id="volumeSlider12" min="0" max="1" step="0.01" value="1" oninput="setVolume12(this.value)">
+            <audio id="myAudio12" loop>
+                <source src="music/perfect-beauty-191271.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div id="music">
+            <p>Mood</p>
+            <img src="img/galaxy-8739702_1280.png" alt="beat4" height="140px" class="beat">
+            <button onclick="playSound13()" id="playButton13">Play Sound</button>
+            <button onclick="stopSound13()">Stop Sound</button>
+            <input type="range" id="volumeSlider13" min="0" max="1" step="0.01" value="1" oninput="setVolume13(this.value)">
+            <audio id="myAudio13" loop>
+                <source src="music/solitude-dark-ambient-electronic-197737.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
